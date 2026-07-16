@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+    <!-- REVISED GLOBAL HEADER - Assuming this structure from style.css -->
+    <header>
+        <ul class="header-item-container"><a href="index.html"><img id="logo" src="media/logo.png" alt="VUT Logo"></a></ul>
+    
+        <ul class="header-item-container2">
+            <a class="link" href="index.html">Home</a>
+            <a class="link" href="about.html">About</a>
+            <a class="link" href="menu.php">Menu</a>
+            <a id="here" class="link" href="contact.html">Contact</a>
+             <a class="link" href="cart.php">Cart</a>
+        </ul>
+    </header>
+
+    <main>
+        <!-- CONTACT US BANNER (Red Background) -->
+        <section class="top-banner">
+            <h1>CONTACT US</h1>
+            <p>------------------------------------------------------------------</p>
+        </section>
+
+        <!-- GET IN TOUCH & INFO PANELS SECTION (Based on sketch layout) -->
+        <section class="contact-details-section">
+            
+            <!-- Left Side Title -->
+            <div class="get-in-touch-title">
+                <p class="accent-text">Let's fight hunger!</p>
+                <h2>GET IN TOUCH...</h2>
+            </div>
+            
+            <!-- Right Side Info Cards -->
+            <div class="info-panels-container">
+                
+                 <!-- 1. Address Card - LINK UPDATED HERE -->
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p>Andries Potgieter Boulevard, Vanderbijlpark, 1911, South Africa</p>
+                    <a href="https://www.bing.com/maps?q=Vaal+University+OF+Technology" target="_blank">View on Map &rarr;</a>
+                </div>
+                
+                <!-- 2. Working Hours Card -->
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Working Hours</h3>
+                    <p>Mon - FRI: 8:00 AM - 8:00 PM</p>
+                    <p class="small-text">Open every day to serve the VUT community.</p>
+                </div>
+
+                <!-- 3. Communication Card -->
+                <div class="info-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Contact Details</h3>
+                    <p>Email: vutcafe@vut.ac.za</p>
+                    <p>Phone: +27 67 993 3441</p>
+                    <a href="mailto:vutcafe@Vut.ac.za">Send Email &rarr;</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- QUERY FORM SECTION (Two-column layout for Form and Info) -->
+        <section class="query-form-section">
+            
+            <!-- Intro Panel (Red Left Side of the form block) -->
+            <div class="form-intro-panel">
+                <h2>Contact Us</h2>
+                <p>Whether you have a general inquiry, a specific catering request, or feedback on your last meal, we want to hear from you.</p>
+                <div class="form-social-links">
+                    <p>Or connect with us instantly:</p>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <!-- Form Fields (White Right Side of the form block) -->
+            <form 
+                class="query-form" 
+                action="https://formsubmit.co/Thato.Apollo.Maake@gmail.com" 
+                method="POST"
+            >
+                <!-- FormSubmit mandatory hidden fields -->
+                <input type="hidden" name="_subject" value="New Customer Query from VUT Cafeteria Website">
+                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> 
+
+                <!-- Name & Surname -->
+                <div class="form-group">
+                    <label for="name">Name & Surname</label>
+                    <input 
+                        type="text" 
+                        name="Name" 
+                        id="name" 
+                        placeholder="Your Name" 
+                        required 
+                    />
+                </div>
+                
+                <!-- Contact Information (Email or Phone) -->
+                <div class="form-group">
+                    <label for="contact">Contact Information (Email or Phone)</label>
+                    <input 
+                        type="text" 
+                        name="Contact_Info" 
+                        id="contact" 
+                        placeholder="Your Email or Phone" 
+                        required 
+                    />
+                </div>
+
+                <!-- Message/Query -->
+                <div class="form-group">
+                    <label for="message">Your Message / Query</label>
+                    <textarea 
+                        name="Message" 
+                        id="message" 
+                        rows="6" 
+                        placeholder="What can we help you with today?" 
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="cta-btn submit-btn">Send Message</button>
+                
+            </form>
+            
+        </section>
+
+    </main>
+    
+    
+
+
+    <!-- Assuming script.js is used for the back-to-top button and other interactions -->
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <section class="section-1">
+        <p class = "footer-item">VAAL UNIVERSITY OF TECHNOLOGY CAFETERIA</p>
+    </section>
+
+    <section class="section-2">
+        <p class="footer-item">Address<br>
+            Andries Potgieter Boulevard<br>
+            Vanderbijlpark<br>
+            1911<br>
+            South Africa
+        </p>
+    </section>
+
+    <section class="section-2">
+        <p class = "footer-item">CONTACT<br>
+            vutcafe@vut.ac.za<br>
+            +27 67 993 3441</p>
+    </section>
+
+    <section class="section-2">
+        <p class = 'footer-item'>Follow us on social media:</p>
+        <div class="icons">
+            <a href="#"><i class="fab fa-facebook-f"></i> VUT Cafeteria</a><br>
+            <a href="#"><i class="fab fa-instagram"></i> vut_cafeteria</a><br>
+            <a href="#"><i class="fab fa-twitter"></i> vut_cafeteria</a>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="section-4">
+        <p id = "copywrite" class = "footer-item">© 2025 VUT CAFE</p>
+    </section>
+</footer>
+</html>
